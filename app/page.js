@@ -19,7 +19,7 @@ export default function Home() {
           </li>
           <li>Save and see your changes instantly.</li>
           <h1> Test Next JS</h1>
-          <h1> account change test</h1>
+          <h1> account change test - 1</h1>
         </ol>
 
         <div className={styles.ctas}>
