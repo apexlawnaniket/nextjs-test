@@ -1,4 +1,4 @@
-import { basePath } from '@/next.config';
+import { basePath } from '/next.config';
 import Image from 'next/image';
 import styles from './page.module.css';
 
