@@ -3,12 +3,13 @@ import styles from './page.module.css';
 
 export default function Home() {
   const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
+  console.log(prefix)
   return (
     <div className={styles.page}>
       <main className={styles.main}>
         <Image
           className={styles.logo}
-          src={`${prefix}/logo.png`}
+          src={`${prefix}logo.png`}
           alt='Next.js logo'
           width={180}
           height={38}
