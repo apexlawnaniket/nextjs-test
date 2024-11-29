@@ -9,7 +9,7 @@ export default function Home() {
       <main className={styles.main}>
         <Image
           className={styles.logo}
-          src={`${prefix}logo.png`}
+          src={`${prefix}./logo.png`}
           alt='Next.js logo'
           width={180}
           height={38}
@@ -21,6 +21,7 @@ export default function Home() {
           </li>
           <li>Save and see your changes instantly.</li>
           <h1> Test Next JS</h1>
+            <h2> {prefix} </h2>
           <h1> account change test - 1</h1>
         </ol>
 
