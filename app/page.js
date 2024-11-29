@@ -2,12 +2,13 @@ import Image from 'next/image';
 import styles from './page.module.css';
 
 export default function Home() {
+  const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
   return (
     <div className={styles.page}>
       <main className={styles.main}>
         <Image
           className={styles.logo}
-          src='/next.svg'
+          src={`${prefix}/logo.png`}
           alt='Next.js logo'
           width={180}
           height={38}
@@ -31,7 +32,7 @@ export default function Home() {
           >
             <Image
               className={styles.logo}
-              src='/vercel.svg'
+              src= {`${prefix}/vercel.svg`}
               alt='Vercel logomark'
               width={20}
               height={20}
