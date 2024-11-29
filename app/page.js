@@ -2,14 +2,12 @@ import Image from 'next/image';
 import styles from './page.module.css';
 
 export default function Home() {
-  const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
-  console.log(prefix)
   return (
     <div className={styles.page}>
       <main className={styles.main}>
         <Image
           className={styles.logo}
-          src= {`${process.env.BASE_PATH}/logo.png`}
+          src={'/next.svg'}
           alt='Next.js logo'
           width={180}
           height={38}
@@ -21,7 +19,7 @@ export default function Home() {
           </li>
           <li>Save and see your changes instantly.</li>
           <h1> Test Next JS</h1>
-            <h2> {prefix} </h2>
+
           <h1> account change test - 1</h1>
         </ol>
 
@@ -34,7 +32,7 @@ export default function Home() {
           >
             <Image
               className={styles.logo}
-              src= {`${prefix}/vercel.svg`}
+              src={`/vercel.svg`}
               alt='Vercel logomark'
               width={20}
               height={20}
